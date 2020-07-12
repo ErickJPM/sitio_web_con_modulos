@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Matricula</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Primer apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Estado civil</th>
+            <th scope="col">Actualizar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>matricula ejemplo</td>
+            <td>nombre ejemplo</td>
+            <td>primer apellido ejemplo</td>
+            <td>Segundo apellido ejemplo</td>
+            <td>edad ejemplo</td>
+            <td>fecha de Nacimiento ejemplo</td>
+            <td>estado civil ejemplo</td>
+            <td><i><img src="static/assets/update.png" width="25" height="23"></i></td>
+            
+            
+          </tr>
+      </table>
+      <p class="lead">
+
+        <a href="/" class="btn btn-lg btn-secondary">regresar</a>
+   
+      </p>
+      <form method="POST" action="" class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" name="name" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              ingresa correctamente el nombre.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="firstlastName">Primer apellido</label>
+            <input type="text" class="form-control" name="apellido1" id="firstlastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              ingresa correctamente el primer apellido.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="secondlastName">segundo apellido</label>
+            <input type="text" class="form-control" id="secondlastName" name="apellido2" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              ingresa correctamente el segundo apellido.
+            </div>
+            
+          </div>
+        </div>
+
+        
+
+        <div class="mb-3">
+          <label for="matricula">Matricula <span class="text-muted"></span></label>
+          <input type="number" class="form-control" name="matricula" id="matricula" placeholder="1718110879" required>
+          <div class="invalid-feedback">
+            ingresa bien la matricula
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="age">Edad</label>
+          <input type="number" class="form-control" name="age" id="age" maxlength="3" minlength="1" min="1" max="130" name="edad" required>
+          <div class="invalid-feedback">
+            ingresa bien la edad porfavor
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="born">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="born" name="Nacimiento" required>
+          <div class="invalid-feedback">
+            ingresa bien la fecha de Nacimiento porfavor
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="genero">Sexo</label>
+          <select name="genero">
+            <option value='null' selected>Selecciona</option> 
+            <option value="Masculino">Masculino</option> 
+            <option value="Femenino">Femenino</option>
+          </select>
+          
+        </div>
+
+        <div class="mb-3">
+          <label for="estado" >Estado Civil</label>
+      
+          <select name="estado">
+              <option value='null' selected>Selecciona</option> 
+              <option value="Soltero">Soltero</option> 
+              <option value="Casado">Casado</option>
+              <option value="Divorciado">Divorciado</option>
+              <option value="Viudo">Viudo</option>
+              <option value="Concubinato">Concubinato</option>
+          </select>
+          
+        </div>
+        <input type="submit" value="enviar" >
+      </form>  
+
+      <main role="main" class="inner cover">
+        
+        
+      </main>
+    
+</body>
+</html>
